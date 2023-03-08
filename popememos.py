@@ -48,7 +48,7 @@ while not done:
 		scaled_image = pygame.transform.scale(image, (TILE_SIZE, TILE_SIZE))
 		popes.append(Tile(filename, scaled_image))
 		
-	popes.shuffle()
+	random.shuffle(popes)
 	
 
 	mode = 0
